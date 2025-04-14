@@ -4,7 +4,7 @@ import DisplayBlogs from "./DisplayBlogs";
 import usePagination from "../hooks/usePagination";
 import { Link } from "react-router-dom";
 
-function HomePage() {
+function Home1() {
   const [page, setPage] = useState(1);
   const { token, id: userId } = useSelector((state) => state.user);
 
@@ -54,4 +54,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home1;

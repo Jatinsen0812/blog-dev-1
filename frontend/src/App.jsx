@@ -8,7 +8,7 @@ import ProfilePage from "./pages/ProfilePage";
 import EditProfile from "./pages/EditProfile";
 import SearchBlogs from "./components/SearchBlogs";
 import Setting from "./components/Setting";
-import HomePage from "./components/Homepage";
+import Home1 from "./components/Home1";
 
 
 
@@ -17,7 +17,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Navbar />}>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home1 />} />
         <Route path="/signin" element={<AuthForm type={"signin"} />} />
         <Route path="/signup" element={<AuthForm type={"signup"} />} />
         <Route path="/add-blog" element={<AddBlog />} />
