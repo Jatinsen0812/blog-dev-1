@@ -8,7 +8,7 @@ function Home1() {
   const [page, setPage] = useState(1);
   const { token, id: userId } = useSelector((state) => state.user);
 
-  const { blogs, hasMore, isLoading } = usePagination("blogs", {}, 4, page);
+  const { blogs, hasMore, isLoading } = usetion("blogs", {}, 4, page);
 
   return (
     <div className=" w-full  lg:w-[70%] 2xl:w-[60%] mx-auto flex   px-5 ">
