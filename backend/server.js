@@ -10,7 +10,9 @@ const app = express();
 const port = PORT || 5000;
 
 app.use(express.json());
-app.use(cors({ origin: FRONTEND_URL, credentials: true }));
+app.use(cors({
+  origin: '*'
+}));
 
 
 app.get("/", (req, res) => {
